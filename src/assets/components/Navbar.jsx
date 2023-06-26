@@ -4,22 +4,10 @@ import { Button, Drawer, AppBar, Toolbar, IconButton, Typography, Box} from '@mu
 import {useState} from "react";
 import App from '../../App';
 import MenuIcon from "@mui/icons-material/Menu";
+import { NavLink } from 'react-router-dom';
 
-const navLinks=[
-    {
-        title:"Inicio", path:"#"
-    },
-    {
-        title:"Quien Soy?", path:"#"
-    },
-    {
-        title:"Proyectos", path:"#"
-    },
-    {
-        title:"Contacto", path:"#"
-    },
-]
-const NavBar = () => {
+
+const NavBar = ({navLinks}) => {
     const [open, setOpen]= useState(false)
   return (
     <>
@@ -40,9 +28,9 @@ const NavBar = () => {
            {navLinks.map(item=>(
             <Button 
             color="inherit"
-            key={item}
-            component="a"
-            href={item.path}>
+            key={item.title}
+            component={NavLink}
+            to={item.path}>
                 {item.title}
             </Button>
            ))
@@ -58,7 +46,7 @@ const NavBar = () => {
     onClose={()=> setOpen(false)}
     sx={{display:{xs:"flex", sm:"none"}}}
     >
-        <NavListDrawer navLinks={navLinks}></NavListDrawer>
+        <NavListDrawer navLinks={navLinks} setOpen={setOpen}></NavListDrawer>
     </Drawer>
     </>
   )

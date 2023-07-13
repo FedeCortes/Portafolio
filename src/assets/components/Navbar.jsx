@@ -1,55 +1,41 @@
 import React from 'react';
 import NavListDrawer from './NavListDrawer';
-import { Button, Drawer, AppBar, Toolbar, IconButton, Typography, Box} from '@mui/material';
-import {useState} from "react";
-import App from '../../App';
-import MenuIcon from "@mui/icons-material/Menu";
+import { Button, Drawer, AppBar, Toolbar, IconButton, Typography, Box } from '@mui/material';
+import { useState } from 'react';
+import MenuIcon from '@mui/icons-material/Menu';
 import { NavLink } from 'react-router-dom';
 
+const NavBar = ({ navLinks }) => {
+  const [open, setOpen] = useState(false);
 
-const NavBar = ({navLinks}) => {
-    const [open, setOpen]= useState(false)
   return (
     <>
-    <AppBar>
+      <AppBar sx={{ height: '100px', alignItems:'center', justifyContent:'center', backgroundColor:"transparent" }}>
         <Toolbar>
-            <IconButton
+          <IconButton
             color="inherit"
             size="large"
-            onClick={()=> setOpen(true)}
-            sx={{display:{xs:"flex", sm:"none"}}}
-            >
-                <MenuIcon/>
-                
-            </IconButton>
-            <Typography variant="h6" sx={{flexGrow:"1"}}>Fede Cortes</Typography>
-            
-            <Box sx={{display:{xs:"none", sm:"block"}}}>
-           {navLinks.map(item=>(
-            <Button 
-            color="inherit"
-            key={item.title}
-            component={NavLink}
-            to={item.path}>
-                {item.title}
-            </Button>
-           ))
-}
-        </Box>  
+            onClick={() => setOpen(true)}
+            sx={{ display: { xs: 'flex', sm: 'none' } }}
+          >
+            <MenuIcon sx={{color:"black"}}/>
+          </IconButton>
+          
+          <Box sx={{ display: { xs: 'none', sm: 'block' }, '& > * + *': { marginLeft: '20px' },  }}>
+            {navLinks.map((item) => (
+              <Button color="inherit" key={item.title} component={NavLink} to={item.path} sx={{marginLeft:'30px'}}>
+              <Typography sx={{ fontSize: '30px', color:"black" }}>  {item.title}</Typography>
+              </Button>
+            ))}
+          </Box>
         </Toolbar>
-    </AppBar>
+      </AppBar>
 
-    
-    <Drawer 
-    open= {open}
-    anchor="left"
-    onClose={()=> setOpen(false)}
-    sx={{display:{xs:"flex", sm:"none"}}}
-    >
-        <NavListDrawer navLinks={navLinks} setOpen={setOpen}></NavListDrawer>
-    </Drawer>
+      <Drawer open={open} anchor="left" onClose={() => setOpen(false)} sx={{ display: { xs: 'flex', sm: 'none' } }}>
+        <NavListDrawer navLinks={navLinks} setOpen={setOpen} />
+      </Drawer>
     </>
-  )
-}
+  );
+};
 
-export default NavBar
+export default NavBar;

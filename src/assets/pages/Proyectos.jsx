@@ -5,7 +5,7 @@ import Typography from "@mui/material/Typography";
 
 const Proyectos = () => {
   return (
-    <div>
+    <div style={{marginBottom:'200px',}}>
       <Typography variant="h4" component="h2" gutterBottom>
         Mis Proyectos
       </Typography>

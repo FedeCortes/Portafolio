@@ -12,6 +12,7 @@ const QuienSoy = () => {
         alignItems: 'center',
         justifyContent: 'center',
         height: '100%',
+        marginBottom:'200px',
       }}
     >
       <Grid container spacing={2} justifyContent="center">

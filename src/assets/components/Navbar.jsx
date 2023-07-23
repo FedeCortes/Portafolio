@@ -10,7 +10,7 @@ const NavBar = ({ navLinks }) => {
 
   return (
     <>
-      <AppBar sx={{ height: '100px', alignItems:'center', justifyContent:'center', backgroundColor:"transparent" }}>
+      <AppBar sx={{ height: '100px', alignItems:'center', justifyContent:'center', backgroundColor:"black"}}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -18,13 +18,13 @@ const NavBar = ({ navLinks }) => {
             onClick={() => setOpen(true)}
             sx={{ display: { xs: 'flex', sm: 'none' } }}
           >
-            <MenuIcon sx={{color:"black"}}/>
+            <MenuIcon sx={{color:"white"}}/>
           </IconButton>
           
           <Box sx={{ display: { xs: 'none', sm: 'block' }, '& > * + *': { marginLeft: '20px' },  }}>
             {navLinks.map((item) => (
               <Button color="inherit" key={item.title} component={NavLink} to={item.path} sx={{marginLeft:'30px'}}>
-              <Typography sx={{ fontSize: '30px', color:"black" }}>  {item.title}</Typography>
+              <Typography sx={{ fontSize: '30px', color:"white" }}>  {item.title}</Typography>
               </Button>
             ))}
           </Box>

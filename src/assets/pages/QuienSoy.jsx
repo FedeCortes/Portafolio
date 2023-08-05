@@ -24,30 +24,30 @@ const QuienSoy = () => {
         <Grid item xs={10} sm={8} md={8} lg={8}>
           <Typography variant="body1">
             <hr />
-            Soy un estudiante de Analista de Sistemas y desarrollador Front-end especializado en ReactJS. Estoy emocionado por comenzar mi carrera profesional en el desarrollo de software.
+            Tengo 21 años, y  estoy estudiando la carrera <strong>“Analista de sistemas”</strong>. Hice varios cursos sobre desarrollo web y además aprendi ReactJS y Java en la universidad.
           </Typography>
         </Grid>
         <Grid item xs={10} sm={8} md={8} lg={8}>
           <Typography variant="body1">
-            Mi enfoque principal se centra en el Front-end, utilizando ReactJS para crear interfaces de usuario interactivas y dinámicas. Aunque soy relativamente nuevo en el campo laboral, estoy comprometido a aprender y crecer como profesional.
+           Por mi cuenta vendi paginas web, y tambien en epocas de finales doy <strong>clases particulares</strong> de Java.
           </Typography>
         </Grid>
         <Grid item xs={10} sm={8} md={8} lg={8}>
           <Typography variant="body1">
-            Además de mi experiencia en ReactJS, también tengo conocimientos en Java. Me considero una persona sociable, proactiva y disfruto trabajar en equipo.
+            Me gustan las redes sociales, por lo que hice un curso de Community Manager y ademas tengo un emprendimiento de suplementos deportivos.
             <br />
             <hr />
-            Actualmente tengo un emprendimiento donde vendo suplementos y por otro lado brindo clases particulares de Java.
+
           </Typography>
         </Grid>
         <Grid item xs={10} sm={8} md={8} lg={8}>
           <Typography variant="body1">
-            Para complementar mi formación y mantenerme actualizado en las últimas tendencias y herramientas del mundo digital, he realizado cursos de desarrollo web y community management.
+          En mi tiempo libre generalmente estoy en el gimnasio de Crossfit. Creo que el entrenamiento no solo es beneficioso para el cuerpo, sino que también es bueno para la disciplina y la determinación.💪
           </Typography>
         </Grid>
         <Grid item xs={10} sm={8} md={8} lg={8}>
           <Typography variant="body1">
-            Estoy entusiasmado por poner en práctica mis habilidades y conocimientos en proyectos desafiantes. Si estás buscando a alguien con pasión por el desarrollo Front-end y un enfoque en la excelencia, ¡no dudes en contactarme!
+            Actualmente me encuentro buscando mi primer empleo formal relacionado a mis estudios, ¡no dudes en contactarme!
             <hr />
           </Typography>
         </Grid>

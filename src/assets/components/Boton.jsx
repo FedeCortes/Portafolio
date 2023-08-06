@@ -8,7 +8,7 @@ const Boton = () => {
     <Box>
       {/* Botón de WhatsApp */}
       <a
-        href="https://api.whatsapp.com/send?phone=1121608606"
+        href="https://api.whatsapp.com/send?phone=5491121608606"
         target="_blank"
         rel="noopener noreferrer"
         style={{

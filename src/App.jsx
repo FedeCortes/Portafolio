@@ -1,5 +1,5 @@
 
-import NavBar from './assets/components/NavBar'
+
 import {BrowserRouter,Routes,Route} from "react-router-dom"
 import Inicio from './assets/pages/Inicio'
 import QuienSoy from './assets/pages/QuienSoy'
@@ -7,6 +7,7 @@ import Proyectos from './assets/pages/Proyectos'
 import Contacto from './assets/pages/Contacto'
 import { Box } from '@mui/material'
 import Boton from './assets/components/Boton'
+import NavBar from './assets/components/Navbar';
 
 function App() {
   const navLinks=[

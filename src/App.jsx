@@ -7,7 +7,7 @@ import Proyectos from './assets/pages/Proyectos'
 import Contacto from './assets/pages/Contacto'
 import { Box } from '@mui/material'
 import Boton from './assets/components/Boton'
-import NavBar from './assets/components/Navbar';
+import Navbar from './assets/components/Navbar';
 
 function App() {
   const navLinks=[
@@ -29,7 +29,7 @@ function App() {
    
       <Box marginTop={16}>
       <BrowserRouter>
-      <NavBar navLinks={navLinks}/>
+      <Navbar navLinks={navLinks}/>
       <Routes>
       <Route path="/" element={<Inicio/>}/>
       <Route path="/QuienSoy" element={<QuienSoy/>}/>

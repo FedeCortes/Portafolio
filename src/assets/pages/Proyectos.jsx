@@ -2,75 +2,47 @@ import React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
+import Link from "@mui/material/Link";
+
+const ProjectCard = ({ title, description, technologies, link }) => (
+  <Card variant="outlined" style={{ marginBottom: "20px" }}>
+    <CardContent>
+      <Typography variant="h5" component="h2" sx={{ fontWeight: 'bold' }}>
+        {title}
+      </Typography>
+      <Typography variant="body2" component="p">
+        {description}
+      </Typography>
+      <Typography variant="h6" component="h5" sx={{ fontWeight: 'bold' }}>
+        Tecnologias utilizadas: {technologies}
+      </Typography>
+      <Link href={link} target="_blank" rel="noopener" style={{ textDecoration: "none" }}>
+        Ver proyecto
+      </Link>
+    </CardContent>
+  </Card>
+);
 
 const Proyectos = () => {
   return (
-    <div style={{marginBottom:'200px',}}>
+    <div style={{ marginBottom: "200px" }}>
       <Typography variant="h4" component="h2" gutterBottom>
         Mis Proyectos
       </Typography>
-      <a href="https://memotestfedecortes.netlify.app/" target="_blank" style={{textDecoration:"none"}}>
-        <Card variant="outlined">
-        <CardContent>
-        <Typography variant="h5" component="h2" sx={{ fontWeight: 'bold' }}>
-     Memotest de Pokemones
-     </Typography>
-  <Typography variant="body2" component="p">
-    En este proyecto, utilicé la API llamada PokeApi para crear un juego de Memotest.
-    Al ingresar al juego, se mostrarán todas las cartas de pokemones dadas vuelta y desordenadas.
-    Tu objetivo es encontrar todas las parejas de pokemones coincidentes.
 
-    El juego cuenta con la lógica completa del Memotest, lo que significa que las cartas se voltearán y se verificará si son coincidentes.
-    Si encuentras una pareja de pokemones, se quedarán descubiertos. Si no coinciden, las cartas se volverán a voltear después de un breve instante.
+      <ProjectCard
+        title="Memotest de Pokemones"
+        description="En este proyecto, utilicé la API llamada PokeApi para crear un juego de Memotest..."
+        technologies="ReactJS - Vite - MaterialUI - Axios - SweetAlert"
+        link="https://memotestfedecortes.netlify.app/"
+      />
 
-    Además, he implementado la funcionalidad de reiniciar el juego. Podes utilizar el botón de reset para borrar las parejas encontradas y mezclar las cartas nuevamente.
-
-  </Typography>
-  <Typography variant="h6" component="h5" sx={{ fontWeight: 'bold' }}>
-  Tecnologias utilizadas: ReactJS - Vite - MaterialUI - Axios - SweetAlert
-</Typography>
-</CardContent>
-        </Card>
-      </a>
-
-      <a href="link-al-proyecto-2" target="_blank" style={{textDecoration:"none"}}>
-        <Card variant="outlined">
-          <CardContent>
-            <Typography variant="h5" component="h2">
-              Título del Proyecto 2
-            </Typography>
-            <Typography variant="body2" component="p">
-              Descripción del Proyecto 2
-            </Typography>
-          </CardContent>
-        </Card>
-      </a>
-
-      <a href="link-al-proyecto-2" target="_blank" style={{textDecoration:"none"}}>
-        <Card variant="outlined">
-          <CardContent>
-            <Typography variant="h5" component="h2">
-              Título del Proyecto 2
-            </Typography>
-            <Typography variant="body2" component="p">
-              Descripción del Proyecto 2
-            </Typography>
-          </CardContent>
-        </Card>
-      </a>
-
-      <a href="link-al-proyecto-2" target="_blank" style={{textDecoration:"none"}}>
-        <Card variant="outlined">
-          <CardContent>
-            <Typography variant="h5" component="h2">
-              Título del Proyecto 2
-            </Typography>
-            <Typography variant="body2" component="p">
-              Descripción del Proyecto 2
-            </Typography>
-          </CardContent>
-        </Card>
-      </a>
+       <ProjectCard
+        title="Tienda"
+        description="En este proyecto, Me junte con un compañero para hacer el modelo de una tienda online..."
+        technologies="ReactJS - Vite - MaterialUI - Axios - SweetAlert"
+        link="https://memotestfedecortes.netlify.app/"
+      />
     </div>
   );
 };

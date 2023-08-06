@@ -24,7 +24,7 @@ const QuienSoy = () => {
         <Grid item xs={10} sm={8} md={8} lg={8}>
           <Typography variant="body1">
             <hr />
-            Tengo 21 años, y  estoy estudiando la carrera <strong>“Analista de sistemas”</strong>. Hice varios cursos sobre desarrollo web y además aprendi ReactJS y Java en la universidad.
+            Tengo 21 años, vivo en Zona Norte, Buenos Aires, Argentina.<br></br> Actualmente estoy estudiando la carrera <strong>“Analista de sistemas”</strong>. Hice varios cursos sobre desarrollo web y además aprendi <strong>ReactJS y Java</strong> en la universidad.
           </Typography>
         </Grid>
         <Grid item xs={10} sm={8} md={8} lg={8}>
@@ -42,7 +42,7 @@ const QuienSoy = () => {
         </Grid>
         <Grid item xs={10} sm={8} md={8} lg={8}>
           <Typography variant="body1">
-          En mi tiempo libre generalmente estoy en el gimnasio de Crossfit. Creo que el entrenamiento no solo es beneficioso para el cuerpo, sino que también es bueno para la disciplina y la determinación.💪
+          En mi tiempo libre generalmente estoy en el gimnasio. Creo que el entrenamiento no solo es bueno para el cuerpo, sino que también es bueno para la disciplina y la determinación.💪
           </Typography>
         </Grid>
         <Grid item xs={10} sm={8} md={8} lg={8}>

@@ -61,10 +61,10 @@ const Proyectos = () => {
       />
 
       <ProjectCard
-        title="Tienda"
+        title="Tienda (En breve )"
         description="En este proyecto, Me junte con un compañero para hacer el modelo de una tienda online..."
         technologies="ReactJS - Vite - MaterialUI - Axios - SweetAlert"
-        link="https://memotestfedecortes.netlify.app/"
+       
       />
     </div>
   );

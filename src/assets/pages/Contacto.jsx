@@ -21,7 +21,7 @@ const Contacto = () => {
       <Divider sx={{ marginBottom: '1.5rem' }} />
 
       <Typography variant="body1">
-        Si te interesa conocerme mas o tenes alguna propuesta te invito a que me contactes.
+        Si te interesa conocerme más o tenes alguna propuesta, te invito a que me contactes.
       </Typography>
 
       <Box
@@ -33,7 +33,7 @@ const Contacto = () => {
   }}
 >
 <Typography variant="body1" sx={{ display: 'flex', alignItems: 'center' }}>
-    <WhatsAppIcon sx={{ marginRight: '0.5rem' }} /> Mándame un WhatsApp o llamame: +54 11-2160-8606
+    <WhatsAppIcon sx={{ marginRight: '0.5rem' }} /> Mándame un WhatsApp o llamame: +54 9 11-2160-8606
   </Typography>
   
   <Typography variant="body1" sx={{ display: 'flex', alignItems: 'center' }}>

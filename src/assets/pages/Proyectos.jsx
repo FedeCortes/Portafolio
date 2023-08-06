@@ -5,18 +5,35 @@ import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
 
 const ProjectCard = ({ title, description, technologies, link }) => (
-  <Card variant="outlined" style={{ marginBottom: "20px" }}>
+  <Card
+    variant="outlined"
+    sx={{
+      marginBottom: "20px",
+      backgroundColor: "#ffffff", // Color de fondo de la tarjeta
+      boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)", // Sombra
+      borderRadius: "8px", // Bordes redondeados
+    }}
+  >
     <CardContent>
-      <Typography variant="h5" component="h2" sx={{ fontWeight: 'bold' }}>
+      <Typography variant="h5" component="h2" sx={{ fontWeight: "bold" }}>
         {title}
       </Typography>
       <Typography variant="body2" component="p">
         {description}
       </Typography>
-      <Typography variant="h6" component="h5" sx={{ fontWeight: 'bold' }}>
+      <Typography variant="h6" component="h5" sx={{ fontWeight: "bold" }}>
         Tecnologias utilizadas: {technologies}
       </Typography>
-      <Link href={link} target="_blank" rel="noopener" style={{ textDecoration: "none" }}>
+      <Link
+        href={link}
+        target="_blank"
+        rel="noopener"
+        style={{
+          textDecoration: "none",
+          color: "#3f51b5", // Color del enlace
+          fontWeight: "bold",
+        }}
+      >
         Ver proyecto
       </Link>
     </CardContent>
@@ -25,7 +42,13 @@ const ProjectCard = ({ title, description, technologies, link }) => (
 
 const Proyectos = () => {
   return (
-    <div style={{ marginBottom: "200px" }}>
+    <div
+      style={{
+        marginBottom: "200px",
+        backgroundColor: "#f7f7f7", // Color de fondo de la sección
+        padding: "20px", // Espaciado interno
+      }}
+    >
       <Typography variant="h4" component="h2" gutterBottom>
         Mis Proyectos
       </Typography>
@@ -37,7 +60,7 @@ const Proyectos = () => {
         link="https://memotestfedecortes.netlify.app/"
       />
 
-       <ProjectCard
+      <ProjectCard
         title="Tienda"
         description="En este proyecto, Me junte con un compañero para hacer el modelo de una tienda online..."
         technologies="ReactJS - Vite - MaterialUI - Axios - SweetAlert"

@@ -61,11 +61,21 @@ const Proyectos = () => {
       />
 
       <ProjectCard
+        title="Instagram Publicaciones CRUD "
+        description="En este proyecto, Realicé un CRUD utilizando el stack MERN. Se puede crear publicaciones, borrarlas, darle 'me gusta' y editarlas. Y todo se guarda en la base de datos."
+        technologies="ReactJS - NodeJS - Express - MongoDB - MaterialUI - Axios - SweetAlert"
+        link="https://instagram-challenge.netlify.app/"
+       
+      />
+
+      <ProjectCard
         title="Tienda (En breve )"
         description="En este proyecto, Me junte con un compañero para hacer el modelo de una tienda online..."
         technologies="ReactJS - Vite - MaterialUI - Axios - SweetAlert"
        
       />
+
+      
     </div>
   );
 };
